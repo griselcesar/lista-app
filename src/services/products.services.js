@@ -1,7 +1,7 @@
 import productsModel from '../models/products.model.js'
 
 export const findProductByCode = async (code) => {
-  let product = await productsModel.find({ code })
+  let product = await productsModel.findOne({ code })
   return product
 }
 

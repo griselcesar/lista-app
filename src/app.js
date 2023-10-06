@@ -10,6 +10,6 @@ app.use(morgan('dev'))
 
 import routesProducts from './routes/products.routes.js'
 
-app.use('/',routesProducts)
+app.use('/products',routesProducts)
 
 export default app
