@@ -1,0 +1,30 @@
+{
+  "name": "lista-app",
+  "version": "0.1.0",
+  "description": "Sistema de administración de lista de precios",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node scr/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "."
+  },
+  "keywords": [
+    "crud",
+    "list"
+  ],
+  "author": "César Grisel",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "cors": "2.8.5",
+    "express": "4.18.2",
+    "mongoose": "7.5.4",
+    "morgan": "1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
