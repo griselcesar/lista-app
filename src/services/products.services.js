@@ -16,16 +16,16 @@ export const getAllProducts = async () => {
 }
 
 export const createNewProduct = async(newProduct) => {
-  let product = productsModel.create(newProduct)
+  let product =await productsModel.create(newProduct)
   return product
 }
 
-export const deleteProductById = (id) => {
-  let product = productsModel.findByIdAndDelete(id)
+export const deleteProductById = async(id) => {
+  let product = await productsModel.findByIdAndDelete(id)
   return product
 }
 
 export const updateProductById = async (id, newData) => {
-  let product = productsModel.findByIdAndUpdate(id,newData,{new:true})
+  let product =await productsModel.findByIdAndUpdate(id,newData,{new:true})
   return product
 }

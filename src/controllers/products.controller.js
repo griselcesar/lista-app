@@ -70,7 +70,8 @@ export const createNewProductCtrl = async (req, res) => {
 export const updateProductByIdCtrl = async (req, res) => {
   let { id } = req.params
   const newDataProduct = req.body
-  const product = updateProductById(id,newDataProduct)
+  const product = await updateProductById(id,newDataProduct)
+  console.log(product)
   if (!product) return res.status(404).json({ message: "producto no encontrado" })
   return res.status(200).json({
     message: "producto actualizado correctamente",
